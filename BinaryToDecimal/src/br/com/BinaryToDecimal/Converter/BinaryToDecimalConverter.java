@@ -1,24 +1,24 @@
-package br.com.BinaryToDecimal.Conversor;
+package br.com.BinaryToDecimal.Converter;
 
 import br.com.BinaryToDecimal.Exception.NotBinaryException;
 import java.util.Scanner;
 
-public class BinaryToDecimalConversor {
+public class BinaryToDecimalConverter {
     Scanner scan = new Scanner(System.in);
 
-    public BinaryToDecimalConversor(int binary){
+    public BinaryToDecimalConverter(int binary){
         if(!isBinary(binary)){
             throw new NotBinaryException("This number is not a Binary number. Binary number just have" +
                     "zero and one");
         }
-        BinaryConversor(binary);
+        BinaryConverter(binary);
     }
 
     private boolean isBinary(int binary){
         return true;
     }
 
-    private void BinaryConversor(int binary){
+    private void BinaryConverter(int binary){
 
     }
 }
